@@ -75,7 +75,25 @@ export class AppComponent implements OnInit, OnDestroy {
     return this.maze().length;
   }
 
+  private requestFullScreen(): void {
+    const elem = document.documentElement as any;
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) { /* Firefox */
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+      elem.msRequestFullscreen();
+    }
+  }
+
   startGame(): void {
+    // Request fullscreen on mobile/touch devices for a more immersive experience
+    if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+        this.requestFullScreen();
+    }
+    
     this.score.set(0);
     this.level.set(1);
     this.loadLevel(this.level());
