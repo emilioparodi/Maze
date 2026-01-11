@@ -1,13 +1,13 @@
 <div class="w-full max-w-7xl mx-auto h-screen p-2 sm:p-4 flex flex-col items-center text-center">
     
-    <header class="w-full mb-4">
-        <h1 class="text-4xl sm:text-5xl font-bold text-cyan-400 tracking-wider" style="text-shadow: 0 0 10px #0891b2;">
+    <header class="w-full mb-2 sm:mb-4">
+        <h1 class="text-3xl sm:text-5xl font-bold text-cyan-400 tracking-wider" style="text-shadow: 0 0 10px #0891b2;">
             Maze Quest
         </h1>
     </header>
 
     @if (gameStatus() !== 'start') {
-    <div class="w-full max-w-xl bg-slate-800/50 rounded-lg p-2 sm:p-4 mb-4 flex flex-wrap justify-center items-center gap-y-2 gap-x-6 text-lg sm:text-xl">
+    <div class="w-full max-w-xl bg-slate-800/50 rounded-lg p-2 sm:p-4 mb-2 sm:mb-4 flex flex-wrap justify-center items-center gap-y-2 gap-x-4 text-base sm:text-xl">
         <div>Level: <span class="font-bold text-yellow-400">{{ level() }}</span></div>
         <div>Time: <span class="font-bold text-yellow-400">{{ timer() }}s</span></div>
         <div>Score: <span class="font-bold text-yellow-400">{{ score() }}</span></div>
@@ -199,7 +199,7 @@
     </main>
     
     @if (gameStatus() === 'playing') {
-    <footer class="mt-4 lg:hidden"> <!-- Only show on small/medium screens -->
+    <footer class="mt-2 lg:hidden"> <!-- Only show on small/medium screens -->
         <div class="grid grid-cols-3 gap-2 w-48">
             <div></div>
             <button (click)="movePlayer(0, -1)" class="bg-slate-700 aspect-square rounded-lg flex items-center justify-center active:bg-cyan-500 transform active:scale-95">
