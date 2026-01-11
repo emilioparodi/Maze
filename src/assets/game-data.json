@@ -1,0 +1,8 @@
+{
+  "gameTitle": "Maze Quest",
+  "version": "1.0.0",
+  "settings": {
+    "difficulty": "normal",
+    "sound": true
+  }
+}
