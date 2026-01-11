@@ -200,26 +200,26 @@
     
     @if (gameStatus() === 'playing') {
     <footer class="mt-2 lg:hidden"> <!-- Only show on small/medium screens -->
-        <div class="grid grid-cols-3 gap-2 w-48">
+        <div class="grid grid-cols-3 gap-1.5 w-48">
             <div></div>
-            <button (click)="movePlayer(0, -1)" class="bg-slate-700 aspect-square rounded-lg flex items-center justify-center active:bg-cyan-500 transform active:scale-95">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+            <button (click)="movePlayer(0, -1)" class="bg-slate-700 py-2 rounded-lg flex items-center justify-center active:bg-cyan-500 transform active:scale-95">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
             </button>
             <div></div>
-            <button (click)="movePlayer(-1, 0)" class="bg-slate-700 aspect-square rounded-lg flex items-center justify-center active:bg-cyan-500 transform active:scale-95">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+            <button (click)="movePlayer(-1, 0)" class="bg-slate-700 py-2 rounded-lg flex items-center justify-center active:bg-cyan-500 transform active:scale-95">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
             </button>
-            <button (click)="movePlayer(0, 1)" class="bg-slate-700 aspect-square rounded-lg flex items-center justify-center active:bg-cyan-500 transform active:scale-95">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+            <button (click)="movePlayer(0, 1)" class="bg-slate-700 py-2 rounded-lg flex items-center justify-center active:bg-cyan-500 transform active:scale-95">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
             </button>
-            <button (click)="movePlayer(1, 0)" class="bg-slate-700 aspect-square rounded-lg flex items-center justify-center active:bg-cyan-500 transform active:scale-95">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+            <button (click)="movePlayer(1, 0)" class="bg-slate-700 py-2 rounded-lg flex items-center justify-center active:bg-cyan-500 transform active:scale-95">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
             </button>
         </div>
     </footer>
     }
-    <audio #levelCompleteSound src="src/assets/level-complete.mp3" preload="auto"></audio>
-    <audio #backgroundMusic src="src/assets/background-music.mp3" loop preload="auto"></audio>
-    <audio #infiniteMusic src="src/assets/infinite-music.mp3" loop preload="auto"></audio>
-    <audio #gameCompleteMusic src="src/assets/game-complete.mp3" preload="auto"></audio>
+    <audio #levelCompleteSound src="src/assets/sounds/level-complete.mp3" preload="auto"></audio>
+    <audio #backgroundMusic src="src/assets/sounds/background-music.mp3" loop preload="auto"></audio>
+    <audio #infiniteMusic src="src/assets/sounds/infinite-music.mp3" loop preload="auto"></audio>
+    <audio #gameCompleteMusic src="src/assets/sounds/game-complete.mp3" preload="auto"></audio>
 </div>
