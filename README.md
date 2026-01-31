@@ -1,20 +1,23 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Maze Quest
 
-# Run and deploy your AI Studio app
+**Maze Quest** is a dynamic puzzle-solving game where players navigate through challenging, procedurally generated labyrinths. This project was developed as an experiment in AI-assisted coding, utilizing **Google AI Studio** tools to optimize game logic and performance.
 
-This contains everything you need to run your app locally.
+### Features
+- **Smart Generation:** Dynamic mazes that change every time you play.
+- **Fluid Controls:** Optimized for both keyboard (desktop) and touch (mobile).
+- **AI-Enhanced Logic:** Core algorithms refined with the help of Gemini models via Google AI Studio.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1hK-Y_lUvmgYFU7VKkO3uBEFtdUTOpJCR
+### Built With
+- **Angular 21+** - Modern, reactive frontend framework.
+- **Google AI Studio** - Used for logic optimization and rapid prototyping.
+- **CSS3 / HTML5 Canvas** - High-performance rendering for smooth gameplay.
 
-## Run Locally
+### Quick Start
+1. Clone the repo.
+2. Run `npm install`.
+3. Start the game with `ng serve`.
 
-**Prerequisites:**  Node.js
+## Additional Resources
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+ƎP Dev.
+https://emilioparodi.dev
